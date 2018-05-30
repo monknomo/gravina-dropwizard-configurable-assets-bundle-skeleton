@@ -1,0 +1,15 @@
+server:
+
+  applicationConnectors:
+    - type: http
+      port: 8087
+  adminConnectors:
+    - type: http
+      port: 8088
+
+assets:
+  mappings:
+    /assets: /
+  overrides:
+    /: /tmp
+
