@@ -21,5 +21,6 @@ public class App extends Application<GravinaConfiguration> {
         //This setting serves the application at /api
         env.jersey().setUrlPattern("/api/*");
         env.jersey().register(new EchoResource());
+        Cors.insecure(env);
     }
 }
